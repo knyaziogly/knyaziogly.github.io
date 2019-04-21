@@ -109,6 +109,7 @@ header p {
 
 .monitor iframe {
 	width: 90%;
+	max-height: 50px;
 	height: 50%;
 	margin: 20px 0 0 20px;
 /*	display: none;
@@ -169,11 +170,15 @@ header p {
 
 .team {
 	max-width: 1500px;
-	height: 725px;
+	min-height: 725px;
 	margin: 0 auto;
 	background: #000;
 	color: #fff;
 	text-align: center;
+}
+
+.team .container {
+	flex-wrap: wrap;
 }
 
 .team h3, .services h3 {
@@ -226,10 +231,15 @@ header p {
 
 .services {
 	max-width: 1500px;
-	height: 735px;
+	min-height: 735px;
 	background: #fff;
 	margin: 0 auto;
 	text-align: center;
+
+}
+
+.services .container {
+	flex-wrap: wrap;
 
 }
 
@@ -302,7 +312,20 @@ header p {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
+	.team .container,
+	.services .container{
+		justify-content: center;
+
+	}
+
+	.man,
+	.serv-item {
+		margin: 0 100px 50px;
+	}
 }
+
+
 
 @media(max-width: 1000px) {
 	.about .container {
@@ -353,6 +376,10 @@ header p {
 		min-height: auto;
 		padding-bottom: 25px;
 	}
+	.man,
+	.serv-item  {
+		margin: 0 50px 50px;
+	}
 }
 
 @media(max-width: 600px){
@@ -385,12 +412,11 @@ header p {
 		display: none;
 		min-height: auto;
 	}
-}
 
-
-.team,
-.services{
-	display: none;
+	.man,
+	.serv-item{
+		margin: 0 20px 50px;
+	} 
 }
 
 
