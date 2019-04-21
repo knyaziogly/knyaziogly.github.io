@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- подключения иконок -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/normaalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#" class="logo">mycompamy</a>
+			<nav>
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#services">services</a></li>
+					<li><a href="#portfolio">portfolio</a></li>
+					<li><a href="#testimonials">testimonials</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<h1>welcome on <span>mycompany</span></h1>
+		<p>We are digital agecy with <strong>years of experiace</strong> and <strong>extaordinary people</strong></p>
+	</header>
+
+	<section  class="about" id="about">
+		<div class="container">
+			<div class="monitor">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/zsPCiaiHdow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="about-text">
+				<h2>some words <span> about us</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, tenetur quisquam quod consequuntur eos animi at, nulla placeat, libero fugiat mollitia dignissimos maiores! Adipisci, eligendi? </p>
+				<ul>
+					<li><strong>Mission -</strong> We deliver unqueness and qualty</li>
+					<li><strong>Slills -</strong> Delivering fast and exellent results</li>
+					<li><strong> Clients</strong> Satisdied client thanks to our experience</li>
+				</ul>
+				
+			</div>
+		</div>
+		
+	</section>
+
+	<section class="team">
+		<h3>our team</h3>
+		<div class="container">
+			<div class="man">
+				<div class="photo">
+					<img src="img/foto.jpg" alt="">
+				</div>
+				<h6>Иван Иванов </h6>
+				<div class="prof">Desiner</div>
+				<p>Do not seek to change what has before. Seek to create that which has note.</p>
+			</div>
+			<div class="man">
+				<div class="photo">
+					<img src="img/foto.jpg" alt="">
+				</div>
+				<h6>Иван Иванов </h6>
+				<div class="prof">Desiner</div>
+				<p>Do not seek to change what has before. Seek to create that which has note.</p>
+			</div>
+			<div class="man">
+				<div class="photo">
+					<img src="img/foto.jpg" alt="">
+				</div>
+				<h6>Иван Иванов </h6>
+				<div class="prof">Desiner</div>
+				<p>Do not seek to change what has before. Seek to create that which has note.</p>
+			</div>
+			<div class="man">
+				<div class="photo">
+					<img src="img/foto.jpg" alt="">
+				</div>
+				<h6>Иван Иванов </h6>
+				<div class="prof">Desiner</div>
+				<p>Do not seek to change what has before. Seek to create that which has note.</p>
+			</div>
+		</div>
+	</section>
+	<section class="services" id="services">
+		<h3>our services</h3>
+		<div class="podtext container">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia at cumque inventore esse error ratione, cupiditate similique! Sed officia praesentium laboriosam hic maxime aut, perspiciatis culpa quasi veniam? Quas, tempore, officia. Atque, quos cum adipisci nulla, modi tenetur eos illo nostrum ratione harum sint sed unde doloremque non, nobis assumenda doloribus voluptates consequuntur, neque aliquid eligendi laudantium pariatur soluta deleniti?
+		</div>
+		<div class="container">
+			<div class="serv-item">
+				<div class="srev-icon"><i class="fas fa-desktop"></i></div>
+				<h5>web desieng</h5>
+				<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+			</div>
+			<div class="serv-item">
+				<div class="srev-icon"><i class="fas fa-mobile-alt"></i></div>
+				<h5>mobile apps</h5>
+				<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+			</div>
+			<div class="serv-item">
+				<div class="srev-icon"><i class="fas fa-camera"></i></div>
+				<h5>photography</h5>
+				<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+			</div>
+			<div class="serv-item">
+				<div class="srev-icon"><i class="fas fa-bullhorn"></i></div>
+				<h5>marketing</h5>
+				<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="1">
+		<div class="2"></div>
+		<div class="2"></div>
+	</div>
+
+
+
+
+
+	<button class="top">наверх</button>
+
+	<!-- ПОДКЛЮЧЕНИЕ БИБЛИОТЕКИ JQUERY -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script>
+		$("nav a").click(function (e){ 
+			e.preventDefault();
+			let href = $(this).attr("href");
+			$("html,body").animate({
+				scrollTop: $(href).offset().top
+			}, 1000);
+
+
+			});
+
+		$(".top").click(function () {
+			$("html,body").animate({
+				scrollTop: 0
+			}, 1000);
+		})
+	
+	</script>
+</body>
+</html>
