@@ -262,6 +262,7 @@ section div.container  h3 {
 /* end why we */
 
 .about-us .container{
+  border-top: 2px solid silver;
   display: flex;
   justify-content: space-between;
 
