@@ -1,0 +1,34 @@
+@media(max-width: 1220px) {
+  .header {
+    height: auto;
+  }
+}
+
+@media (max-width: 865px) {
+  /* .top_header{
+    flex-direction: column;
+  } */
+  .top_header button{
+    display: none;
+
+  }
+
+  .logo{
+    margin: 0 auto;
+  }
+
+  .phone{
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .header-left{
+    width: 100%;
+  }
+  .header .header-right{
+    width: 100%;
+  }
+}
